@@ -132,7 +132,7 @@
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
 % Text colors
-\definecolor{darktext}{HTML}{414141}
+\definecolor{darktext}{HTML}{000000}
 \colorlet{text}{darkgray}
 \colorlet{graytext}{gray}
 \colorlet{lighttext}{lightgray}
@@ -147,9 +147,10 @@
 \definecolor{awesome-darknight}{HTML}{131A28}
 \colorlet{awesome}{awesome-red}
 
+
 % Awesome section color
 \newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
+\def\@sectioncolor#1#2#3#4{%
   {%
     \color{%
       \ifcase\value{colorCounter}%
@@ -159,7 +160,7 @@
         awesome\or%
         awesome\else%
         awesome\fi%
-    } #1#2#3%
+    } #1#2#3#4%
   }%
   \stepcounter{colorCounter}%
 }
@@ -172,17 +173,17 @@
 \newfontfamily\headerfont[
   Path=\@fontdir,
   UprightFont=*-Regular,
-%  ItalicFont=*-Italic,
+  ItalicFont=*-Italic,
   BoldFont=*-Bold,
-%  BoldItalicFont=*-BoldItalic,
+  BoldItalicFont=*-BoldItalic,
 ]{Roboto}
 
 \newfontfamily\headerfontlight[
   Path=\@fontdir,
   UprightFont=*-Regular,
-%  ItalicFont=*-ThinItalic,
+  ItalicFont=*-ThinItalic,
   BoldFont=*-Bold,
-%  BoldItalicFont=*-MediumItalic,
+  BoldItalicFont=*-MediumItalic,
 ]{Roboto}
 
 % Set font for footer (default is Source Sans Pro)
@@ -220,9 +221,9 @@
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{22pt}{1em}\headerfontlight\color{darktext} #1}}
 %\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{22pt}{1em}\headerfont\bfseries\color{darktext} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{10pt}{1em}\headerfontlight\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
@@ -508,7 +509,7 @@
   \par\addvspace{0ex}
   \phantomsection{}
   \sectionstyle{#1}
-  \color{gray}\vhrulefill{0.9pt}
+  \color{awesome-skyblue}\vhrulefill{1.3pt}
   \par\nobreak\addvspace{0ex}
 }
 
