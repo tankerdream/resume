@@ -18,16 +18,14 @@
 - 前端 熟悉HTML、CSS、aJax、jQuery、**Axure**等
 - 数据库 精通MongoDB、Redis，熟悉MySQL，了解HBase
 - 语言 熟悉JavaScript、coffeescript、PHP、Java、Python、Swift，了解Matlab、Erlang、Clojure、Objective-C
-- 分布式 熟悉 **JStorm、MapReduce**编程模型，了解微服务架构、etcd和ZooKeeper，阅读过Storm源码并受邀参与JStorm代码重构
+- 分布式 熟悉 **JStorm、MapReduce**编程模型，了解**微服务架构、etcd和ZooKeeper**，阅读过Storm源码并受邀参与JStorm代码重构
 - 网络通信 熟悉RESTful风格，了解CoAP、MQTT、Socket.IO、Kafka
-- 容器 熟悉Docker技术，了解K8s和Compose
+- 容器 熟悉**Docker**r技术，了解**kubernetes和Compose**
 - 工具 近2年使用Mac OSX开发，熟悉Linux开发环境，熟练使用Git、SVN等版本控制工具，了解UML
 
 ### 自我评价
 
-~~~
 热爱开源，乐于分享，拥抱变化。对自己的编码规范要求严格，超强的学习能力。喜欢读书和哲学，从不将自己局限于技术层面，不满足于解决问题本身。对产品设计、用户体验和团队协作也有一定自己的理解。保持学习的心态，能够持续学习，有很强的自我驱动力，能够接受挑战，能够适应整个社会的变化、整个科学的速度。
-~~~
 
 ### 获奖情况
 
