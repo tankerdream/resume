@@ -21,7 +21,7 @@
 - 分布式 熟悉 **JStorm、MapReduce**编程模型，了解**微服务架构、etcd和ZooKeeper**，阅读过Storm源码并受邀参与JStorm代码重构
 - 网络通信 熟悉RESTful风格，了解CoAP、MQTT、Socket.IO、Kafka
 - 容器 熟悉**Docker**r技术，了解**kubernetes和Compose**
-- 工具 近2年使用Mac OSX开发，熟悉Linux开发环境，熟练使用Git、SVN等版本控制工具，了解UML
+- 工具 CET6，近2年使用Mac OSX开发，熟悉Linux开发环境，熟练使用Git、SVN等版本控制工具，了解UML
 
 ### 自我评价
 
