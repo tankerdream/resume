@@ -236,6 +236,7 @@
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{graytext}}
 \newcommand*{\ljyhigh}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{darktext}}
+\newcommand*{\ljyyejistyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
@@ -552,6 +553,15 @@
       {\entrypositionstyle{#1} & \entrydatestyle{#4} &  \entrylocationstyle{#3} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3}  &  \entrydatestyle{#4}\\}
     \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#5}} \\
+    \multicolumn{3}{L{\textwidth}}{\ljyyejistyle{业绩：}\descriptionstyle{#1}} \\
+  \end{tabular*}
+}
+
+\newcommand*{\ljycventry}[1]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth}}
+    \descriptionstyle{#1} \\
   \end{tabular*}
 }
 
@@ -575,7 +585,6 @@
       {\subentrypositionstyle{#1} & \subentrydatestyle{#3} \\}
     \ifthenelse{\equal{#4}{}}
       {}
-      {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
 }
 
@@ -621,9 +630,8 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-2mm}
+  \vspace{-5mm}
 }
-
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter
