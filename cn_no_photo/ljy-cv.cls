@@ -557,6 +557,17 @@
   \end{tabular*}
 }
 
+\newcommand*{\ljyhuodong}[5]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth-6.5cm} L{2cm} R{4.5cm}}
+
+
+      \entrytitlestyle{#2} & \entrylocationstyle{#3}  &  \entrydatestyle{#4}\\
+    \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#5}} \\
+  \end{tabular*}
+}
+
 \newcommand*{\ljycventry}[1]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
