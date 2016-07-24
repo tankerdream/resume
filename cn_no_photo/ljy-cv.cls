@@ -509,7 +509,7 @@
   \par\addvspace{0ex}
   \phantomsection{}
   \sectionstyle{#1}
-  \color{awesome-skyblue}\vhrulefill{1.3pt}
+  \color{black}\vhrulefill{0.9pt}
   \par\nobreak\addvspace{0ex}
 }
 
