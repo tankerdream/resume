@@ -551,7 +551,7 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth-6.5cm} L{2cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} &  \entrylocationstyle{#3} \\}
-      {\entrytitlestyle{#2} & \entrylocationstyle{#3}  &  \entrydatestyle{#4}\\}
+      {\entrytitlestyle{#2} & \entrylocationstyle{#3}  &  \honorlocationstyle{#4}\\}
     \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#5}} \\
     \multicolumn{3}{L{\textwidth}}{\ljyyejistyle{业绩：}\descriptionstyle{#1}} \\
   \end{tabular*}
@@ -563,7 +563,7 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth-6.5cm} L{2cm} R{4.5cm}}
 
 
-      \entrytitlestyle{#2} & \entrylocationstyle{#3}  &  \entrydatestyle{#4}\\
+      \entrytitlestyle{#2} & \entrylocationstyle{#3}  &  \honorlocationstyle{#4}\\
     \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#5}} \\
   \end{tabular*}
 }
