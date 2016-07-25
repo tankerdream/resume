@@ -265,8 +265,8 @@
 \newcommand*{\honorlocationstyle}[1]{{\fontsize{10.5pt}{18pt}\bodyfontlight\slshape\color{awesome} #1}}
 
 % For elements of skill
-\newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\skilltypestyle}[1]{{\fontsize{10.5pt}{18pt}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{10.5pt}{18pt}\bodyfontlight\color{text} #1}}
 
 % For elements of the cover letter
 \newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
@@ -559,7 +559,7 @@
       {\entrypositionstyle{#1} & \entrydatestyle{#4} &  \entrylocationstyle{#3} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3}  &  \honorlocationstyle{#4}\\}
     \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#5}} \\
-    \multicolumn{3}{L{\textwidth}}{\ljyyejistyle{业绩：}\descriptionstyle{#1}} \\
+    \multicolumn{3}{L{\textwidth}}{\ljyyejistyle{业绩}\descriptionstyle{#1}} \\
   \end{tabular*}
 }
 
@@ -625,9 +625,9 @@
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
   \begin{center}
-    \setlength\tabcolsep{1ex}
+    \setlength\tabcolsep{0ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.95}}}
 }{%
     \end{tabular*}
   \end{center}
@@ -648,7 +648,7 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-5mm}
+  \vspace{-2mm}
 }
 
 %-------------------------------------------------------------------------------
