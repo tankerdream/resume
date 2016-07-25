@@ -389,8 +389,8 @@
 
 %ljy
 \newcommand{\acvHeaderNameDelim}{\space}
-\newcommand{\acvHeaderAfterNameSkip}{.4mm}
-\newcommand{\acvHeaderAfterPositionSkip}{.4mm}
+\newcommand{\acvHeaderAfterNameSkip}{1.4mm}
+\newcommand{\acvHeaderAfterPositionSkip}{1.4mm}
 \newcommand{\acvHeaderAfterAddressSkip}{-.5mm}
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -566,7 +566,7 @@
 {GET} % Category
 {#1} % Skills
 \end{cvskills}
-  \vspace{10pt}
+  \vspace{6pt}
 }
 
 \newcommand*{\ljyhuodong}[5]{%
@@ -583,6 +583,7 @@
 \newcommand*{\ljycventry}[1]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
+  \vspace{-2mm}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth}}
     \descriptionstyle{#1} \\
   \end{tabular*}
@@ -616,6 +617,7 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{4.5pt}
+    \vspace{-2mm}
     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
 }{%
     \end{tabular*}
