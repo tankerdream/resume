@@ -230,13 +230,14 @@
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\color{black} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{9pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{9pt}{1em}\headerfont\color{text} #1}}
-\newcommand*{\headerquotestyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\itshape\color{darktext} #1}}
+\newcommand*{\headerquotestyle}[1]{{\fontsize{10.5pt}{16pt}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{graytext}}
 
 \newcommand*{\ljyyejistyle}[1]{{\fontsize{10.5pt}{18pt}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\ljyhigh}[1]{{\fontsize{10.5pt}{18pt}\bodyfont\bfseries\color{darktext} #1}}
 
 % For elements of entry
 %\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
@@ -559,8 +560,13 @@
       {\entrypositionstyle{#1} & \entrydatestyle{#4} &  \entrylocationstyle{#3} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3}  &  \honorlocationstyle{#4}\\}
     \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#5}} \\
-    \multicolumn{3}{L{\textwidth}}{\ljyyejistyle{业绩}\descriptionstyle{#1}} \\
   \end{tabular*}
+  \begin{cvskills}
+\cvskill
+{GET} % Category
+{#1} % Skills
+\end{cvskills}
+  \vspace{10pt}
 }
 
 \newcommand*{\ljyhuodong}[5]{%
@@ -609,7 +615,7 @@
 \newenvironment{cvhonors}{%
   \begin{center}
     \setlength\tabcolsep{0pt}
-    \setlength{\extrarowheight}{7.5pt}
+    \setlength{\extrarowheight}{4.5pt}
     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
 }{%
     \end{tabular*}
@@ -648,7 +654,7 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-2mm}
+  \vspace{-4.5mm}
 }
 
 %-------------------------------------------------------------------------------
